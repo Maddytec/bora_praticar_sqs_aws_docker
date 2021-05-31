@@ -1,0 +1,12 @@
+cloud:
+  aws:
+    region:
+      static: sa-east-1
+    stack:
+      auto: false
+    credentials:
+      access-key: admin
+      secret-key: admin
+    fila:
+      compra_cartao_credito: http://localhost:9324/queue/compra_cartao_credito
+      compra_cartao_credito_aprovada: http://localhost:9324/queue/compra_cartao_credito_aprovada
