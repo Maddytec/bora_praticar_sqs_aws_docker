@@ -10,3 +10,12 @@ cloud:
     fila:
       compra_cartao_credito: http://localhost:9324/queue/compra_cartao_credito
       compra_cartao_credito_aprovada: http://localhost:9324/queue/compra_cartao_credito_aprovada
+
+## Adicionado para corrigir erro:
+## com.amazonaws.SdkClientException: Failed to connect to service endpoint
+logging:
+  level:
+    com:
+      amazonaws:
+        util:
+          EC2MetadataUtils: error
